@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en" class="bg-light dark:bg-dark scroll-smooth dark:font-GilroyBlack">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sadranoras | main</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- <div id="test" class="w-15 h-15" style="margin-left: 200px;">
+        <h1>hello</h1>
+    </div> -->
+    <header id="header" class="fixed z-30 w-screen border-b h-screen border-slate-50/20">
+        <div
+            class="items-center justify-between mx-auto max-w-[1920px] h-[84px] md:h-25 px-4 bg-light-fixed-01 dark:bg-dark-fixed-01 lg:px-12 bg-slate-50/10 border-b border-slate-50/20 cursor-pointer">
+            <div id="navbar-container-1" class="items-center justify-center">
+                <!--  main navbar icon container  -->
+                <div class="flex flex-row gap-6 items-center justify-center">
+                    <svg id="toggle-dark-01"
+                        class="mr-5 mt-5 static self-end w-12 h-12 bottom-12 cursor-pointer fill-gray-900/50 dark:fill-orange-500/50 transition-all duration-300 hover:fill-gray-900 dark:hover:fill-orange-500">
+                        <use xlink:href="#routine"></use>
+                    </svg>
+                    <div class="flex flex-row">
+                        <a href="./pages/article.html">
+                            <svg id="news-1"
+                                class="w-12 h-12 cursor-pointer fill-slate-50/30 hover:fill-white transition-all duration-300 mt-5">
+                                <use xlink:href="#news"></use>
+                            </svg>
+                        </a>
+                        <a href="#contect-section">
+                            <svg id="forum-1"
+                                class="w-12 h-12 cursor-pointer fill-slate-50/30 hover:fill-white transition-all duration-300 mt-5">
+                                <use xlink:href="#forum"></use>
+                            </svg>
+                        </a>
+                        <a href="#achivements-section">
+                            <svg id="trophy-1"
+                                class="w-12 h-12 cursor-pointer fill-slate-50/30 hover:fill-white transition-all duration-300 mt-5">
+                                <use xlink:href="#trophy"></use>
+                            </svg>
+                        </a>
+                        <a href="#skills-section">
+                            <svg id="star-1"
+                                class="w-12 h-12 cursor-pointer fill-slate-50/30 hover:fill-white transition-all duration-300 mt-5">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                        </a>
+                        <a href="#person-section">
+                            <svg id="person-1"
+                                class="w-12 h-12 cursor-pointer fill-slate-50/30 hover:fill-white transition-all duration-300 mt-5">
+                                <use xlink:href="#person"></use>
+                            </svg>
+                        </a>
+                        <a href="#home-section">
+                            <svg
+                                class="w-12 h-12 cursor-pointer fill-slate-50/30 hover:fill-white transition-all duration-300 mt-5">
+                                <use xlink:href="#home"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="#home-section">
+                <svg
+                    class="ml-10 mb-5 absolute self-end bottom-12 cursor-pointer w-9 h-9 fill-gray-900/50 dark:fill-slate-50/30 transition-all duration-700 hover:fill-gray-900 dark:hover:fill-slate-50 bg-teal-300/30 hover:bg-teal-300 rounded-full">
+                    <use xlink:href="#up"></use>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <!--  svg sprite  -->
+    <svg class="hidden">
+        <defs>
+            <symbol id="home" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path
+                    d="M240-200h147.69v-235.38h184.62V-200H720v-360L480-741.54 240-560v360Zm-40 40v-420l280-211.54L760-580v420H532.31v-235.38H427.69V-160H200Zm280-310.77Z" />
+            </symbol>
+            <symbol id="routine" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path
+                    d="M409.85-409.85q-38.16-38.15-68.5-81.61-30.35-43.46-53.12-92.46-14.23 24-20.73 50.04Q261-507.85 261-480q0 91.34 63.83 155.17Q388.66-261 480-261q27.08 0 53.88-7 26.81-7 50.04-20.23-49-22.77-92.46-53.12-43.46-30.34-81.61-68.5Zm28.53-27.53q47.16 47.15 104.77 82.5 57.62 35.34 122.7 56.88-36.16 37.15-84.16 57.58Q533.69-220 481-220q-108.64 0-184.32-75.68Q221-371.36 221-480q0-52.69 20.42-100.69 20.43-48 57.58-84.16 21.54 65.08 56.88 122.7 35.35 57.61 82.5 104.77Zm283.08 56.61q-10.09-2.74-19.93-6.02-9.84-3.29-19.61-6.67 8.77-20.31 13.43-42.27 4.65-21.96 4.65-43.99 0-91.42-64.43-155.85Q571.14-700 479.72-700q-22.03 0-43.99 4.27t-42.27 13.04q-3.38-9.77-6.24-18.94-2.85-9.18-5.45-18.83Q405-730.23 430-735.12q25-4.88 51-4.88 108.64 0 184.32 75.68Q741-588.64 741-480q0 26-4.88 51-4.89 25-14.66 48.23ZM460-829.23v-95.39h40v95.39h-40Zm0 793.85v-95.39h40v95.39h-40Zm281.46-677.54-28.54-28.54L778.69-807l28.54 28.31-65.77 65.77ZM181.31-153l-28.54-28.31 65.77-65.77 28.54 28.54L181.31-153Zm647.92-307v-40h95.39v40h-95.39Zm-793.85 0v-40h95.39v40H35.38Zm743.31 307.23-65.77-65.77 28.54-28.54L807-181.31l-28.31 28.54ZM218.54-712.92 153-778.69l28.31-28.54 65.77 65.77-28.54 28.54Zm191.31 303.07Z" />
+            </symbol>
+            <symbol id="person" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path
+                    d="M480-504.62q-49.5 0-84.75-35.25T360-624.62q0-49.5 35.25-84.75T480-744.62q49.5 0 84.75 35.25T600-624.62q0 49.5-35.25 84.75T480-504.62ZM200-215.38v-65.85q0-24.77 14.42-46.35 14.43-21.57 38.81-33.5 56.62-27.15 113.31-40.73 56.69-13.57 113.46-13.57 56.77 0 113.46 13.57 56.69 13.58 113.31 40.73 24.38 11.93 38.81 33.5Q760-306 760-281.23v65.85H200Zm40-40h480v-25.85q0-13.31-8.58-25-8.57-11.69-23.73-19.77-49.38-23.92-101.83-36.65-52.45-12.73-105.86-12.73t-105.86 12.73Q321.69-349.92 272.31-326q-15.16 8.08-23.73 19.77-8.58 11.69-8.58 25v25.85Zm240-289.24q33 0 56.5-23.5t23.5-56.5q0-33-23.5-56.5t-56.5-23.5q-33 0-56.5 23.5t-23.5 56.5q0 33 23.5 56.5t56.5 23.5Zm0-80Zm0 369.24Z" />
+            </symbol>
+            <symbol id="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path
+                    d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Zm-61 83.92 49.62-212.54-164.93-142.84 217.23-18.85L480-777.69l85.08 200.38 217.23 18.85-164.93 142.84L667-203.08 480-315.92 293-203.08ZM480-470Z" />
+            </symbol>
+            <symbol id="trophy" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path
+                    d="M335.38-160v-40H460v-150.15q-52.85-9.47-92.5-44.2-39.65-34.73-54.58-86.11-63.46-7.46-108.19-52.04T160-640v-40q0-16.08 11.96-28.04T200-720h106.15v-80h347.7v80H760q16.08 0 28.04 11.96T800-680v40q0 62.92-44.73 107.5t-108.19 52.04q-14.93 51.38-54.58 86.11t-92.5 44.2V-200h124.62v40H335.38Zm-29.23-363.38V-680H200v40q0 45.69 30.46 78.5t75.69 38.12ZM480-389.23q55.38 0 93.85-38.46 38.46-38.46 38.46-93.85V-760H347.69v238.46q0 55.39 38.46 93.85 38.47 38.46 93.85 38.46Zm173.85-134.15q45.23-5.31 75.69-38.12Q760-594.31 760-640v-40H653.85v156.62ZM480-574.62Z" />
+            </symbol>
+            <symbol id="forum" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path
+                    d="M289.23-310.77q-13.08 0-21.92-8.84-8.85-8.85-8.85-21.93v-40h470l25.39 25.39V-720h40q13.07 0 21.92 8.85 8.85 8.84 8.85 21.92v501.54L701.54-310.77H289.23Zm-153.85-27.69v-470.77q0-13.08 8.85-21.92 8.85-8.85 21.92-8.85h476.93q13.07 0 21.92 8.85 8.85 8.84 8.85 21.92v316.92q0 13.08-8.85 21.93-8.85 8.84-21.92 8.84H258.46L135.38-338.46Zm498.47-163.08V-800H175.38v353.85l55.39-55.39h403.08Zm-458.47 0V-800v298.46Z" />
+            </symbol>
+            <symbol id="phone" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z" />
+            </symbol>
+            <symbol id="message" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20 2H4c-1.103 0-2 .894-2 1.992v12.016C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2z" />
+            </symbol>
+            <symbol id="telegram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z" />
+            </symbol>
+            <symbol id="news" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path
+                    d="M224.62-160q-27.62 0-46.12-18.5Q160-197 160-224.62v-510.76q0-27.62 18.5-46.12Q197-800 224.62-800h398.46L800-623.08v398.46q0 27.62-18.5 46.12Q763-160 735.38-160H224.62Zm0-40h510.76q10.77 0 17.7-6.92 6.92-6.93 6.92-17.7V-600H600v-160H224.62q-10.77 0-17.7 6.92-6.92 6.93-6.92 17.7v510.76q0 10.77 6.92 17.7 6.93 6.92 17.7 6.92ZM300-320h360v-40H300v40Zm0-280h180v-40H300v40Zm0 140h360v-40H300v40ZM200-760v160-160 560-560Z" />
+            </symbol>
+            <symbol id="up" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 15L12 9L6 15">
+            </symbol>
+        </defs>
+    </svg>
+    <!--  navbar  -->
+    <div id="navbar"
+        class="w-48 h-screen fixed flex z-30 transition-all duration-500 -ml-24 justify-center items-center">
+        <!-- Menu Word container   -->
+        <div class="h-screen w-24 order-1 flex justify-center items-center">
+            <h2 id="menu-button"
+                class="font-Gilroy text-3xl -rotate-90 tracking-[14px] cursor-pointer transition-all duration-500">MENU
+            </h2>
+        </div>
+        <div id="navbar-container"
+            class="hidden md:flex justify-center items-center h-screen w-24 bg-slate-50/10 border-r border-slate-50/20 cursor-pointer">
+            <!--  main navbar icon container  -->
+            <div class="flex flex-col gap-6">
+                <a href="#home-section">
+                    <svg class="w-12 h-12 cursor-pointer fill-slate-50/30 hover:fill-white transition-all duration-300">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                </a>
+                <a href="#person-section">
+                    <svg id="person-1"
+                        class="w-12 h-12 cursor-pointer fill-slate-50/30 hover:fill-white transition-all duration-300">
+                        <use xlink:href="#person"></use>
+                    </svg>
+                </a>
+                <a href="#skills-section">
+                    <svg id="star-1"
+                        class="w-12 h-12 cursor-pointer fill-slate-50/30 hover:fill-white transition-all duration-300">
+                        <use xlink:href="#star"></use>
+                    </svg>
+                </a>
+                <a href="#achivements-section">
+                    <svg id="trophy-1"
+                        class="w-12 h-12 cursor-pointer fill-slate-50/30 hover:fill-white transition-all duration-300">
+                        <use xlink:href="#trophy"></use>
+                    </svg>
+                </a>
+                <a href="#contect-section">
+                    <svg id="forum-1"
+                        class="w-12 h-12 cursor-pointer fill-slate-50/30 hover:fill-white transition-all duration-300">
+                        <use xlink:href="#forum"></use>
+                    </svg>
+                </a>
+                <a href="./pages/article.html">
+                    <svg id="news-1"
+                        class="w-12 h-12 cursor-pointer fill-slate-50/30 hover:fill-white transition-all duration-300">
+                        <use xlink:href="#news"></use>
+                    </svg>
+                </a>
+            </div>
+            <svg id="toggle-dark"
+                class="absolute self-end w-12 h-12 bottom-12 cursor-pointer fill-gray-900/50 dark:fill-orange-500/50 transition-all duration-300 hover:fill-gray-900 dark:hover:fill-orange-500">
+                <use xlink:href="#routine"></use>
+            </svg>
+        </div>
+    </div>
+    <div id="navbar-1" class="w-48 h-screen fixed flex z-30 transition-all duration-500 justify-center items-center"
+        style="margin-left: calc(100vw - 150px);">
+        <div id="navbar-container-1" class="hidden md:flex justify-center items-center h-screen w-24 cursor-pointer">
+            <div style="margin-right: 25px;">
+                <a href="#home-section">
+                    <svg
+                        class="absolute self-end w-10 h-10 bottom-12 cursor-pointer rounded-full bg-teal-300/30 hover:bg-teal-300 fill-gray-900/50 dark:fill-slate-50/30 transition-all duration-700 hover:fill-gray-900 dark:hover:fill-slate-50">
+                        <use xlink:href="#up"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--  main part  -->
+    <div class="relative md:left-24 w-screen md:w-[calc(100vw-96px)]">
+        <!--  banner  -->
+        <div id="home-section" class="min-h-screen flex justify-center items-center">
+            <div>
+                <h1 class="font-GilroyBlack text-5xl lg:text-6xl mb-4 text-center" style="color: aqua;">
+                    I am Sadra Noras</h1>
+                <h2 class="font-GilroyLight text-4xl w-full text-center" style="color: aqua;">I am a Web Developer.</h2>
+            </div>
+        </div>
+        <div id="person-section" class="min-h-screen w-full flex justify-center items-center mt-32">
+            <div class="w-3/4">
+                <h3 class="font-GilroyExtraBold text-7xl w-48 float-left clrar-both mr-4 text-gray-900 dark:text-white">
+                    Who am I?</h3>
+                <p class="font-GilroyLight text-3xl text-justify leading-10 text-gray-900 dark:text-white">Lorem ipsum
+                    dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur.
+                </p>
+            </div>
+        </div>
+        <div id="skills-section" class="min-h-screen w-full flex justify-center items-center">
+            <div class="w-3/5 flex flex-col gap-10">
+                <!--  Progress Bar  -->
+                <div>
+                    <h3 class="font-GilroySemiBold text-3xl mb-2 text-gray-900 dark:text-white">HTML, CSS</h3>
+                    <div class="h-2 rounded-full bg-slate-600/30 dark:bg-slate-300/30">
+                        <div class="h-full w-[70%] bg-slate-900 dark:bg-slate-300 rounded-full"></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-GilroySemiBold text-3xl mb-2 text-gray-900 dark:text-white">photoshop</h3>
+                    <div class="h-2 rounded-full bg-slate-600/30 dark:bg-slate-300/30">
+                        <div class="h-full w-[80%] bg-slate-900 dark:bg-slate-300 rounded-full"></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-GilroySemiBold text-3xl mb-2 text-gray-900 dark:text-white">Python</h3>
+                    <div class="h-2 rounded-full bg-slate-600/30 dark:bg-slate-300/300">
+                        <div class="h-full w-[40%] bg-slate-900 dark:bg-slate-300 rounded-full"></div>
+                    </div>
+                </div>
+                <!--  Circular Progress  -->
+                <div class="md:flex justify-between items-center">
+                    <h3 class="font-GilroySemiBold text-3xl mb-2 text-gray-900 dark:text-white">English Level</h3>
+                    <div class="flex justify-between md:w-1/2 mt-8">
+                        <div class="h-4 w-4 bg-slate-600/30 dark:bg-slate-200/30 rounded-full"></div>
+                        <div class="h-4 w-4 bg-slate-600/30 dark:bg-slate-200/30 rounded-full"></div>
+                        <div class="h-4 w-4 bg-slate-600/30 dark:bg-slate-200/30 rounded-full"></div>
+                        <div class="h-4 w-4 bg-slate-600/30 dark:bg-slate-200/30 rounded-full"></div>
+                        <div>
+                            <div class="h-4 w-4 bg-slate-900 dark:bg-slate-200 rounded-full"></div>
+                            <h4 class="font-GilroyLight mt-3 text-xl text-gray-900 dark:text-white">C1</h4>
+                        </div>
+                        <div class="h-4 w-4 bg-slate-600/30 dark:bg-slate-200/30 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="achivements-section" class="min-h-screen w-full flex justify-center items-center">
+            <div class="ml-28 flex justify-center items-center flex-wrap gap-y-12 mr-16">
+                <div
+                    class="h-[200px] sm:h-[250px] w-[400px] sm:w-[500px] border-b-4 border-slate-700 dark:border-slate-100 flex flex-col justify-center items-center -ml-[40px] bg-light-div dark:bg-dark-div">
+                    <h4 class="font-GilroyBold text-slate-50/30 text-5xl sm:text-6xl mb-8">coming soon</h4>
+                    <p class="font-GilroyLight text-3xl sm:text-4xl text-slate-100/30"><span
+                            class="text-[#ebc034]">coming soon,</span> </p>
+                </div>
+                <div
+                    class="h-[200px] sm:h-[250px] w-[400px] sm:w-[500px] border-b-4 border-slate-700 dark:border-slate-100 flex flex-col justify-center items-center -ml-[40px] bg-light-div dark:bg-dark-div">
+                    <h4 class="font-GilroyBold text-slate-50/30 text-5xl sm:text-6xl mb-8">coming soon</h4>
+                    <p class="font-GilroyLight text-slate-100/30 text-3xl sm:text-4xl"><span
+                            class="text-[#d0d0d0]">coming soon,</span> </p>
+                </div>
+                <div
+                    class="h-[200px] sm:h-[250px] w-[400px] sm:w-[500px] border-b-4 border-slate-700 dark:border-slate-100 flex flex-col justify-center items-center -ml-[40px] bg-light-div dark:bg-dark-div">
+                    <h4 class="font-GilroyBold text-slate-50/30 text-5xl sm:text-6xl mb-8">coming soon</h4>
+                    <p class="font-GilroyLight text-slate-100/30 text-3xl sm:text-4xl"><span
+                            class="text-[#ebc034]">coming soon,</span> </p>
+                </div>
+            </div>
+
+        </div>
+        <footer id="contect-section" class="min-h-screen w-full flex justify-center items-center gap-20 flex-wrap z-40">
+            <a href="tel:+989876543210" class="z-40">
+                <svg
+                    class="w-20 h-[75px] hover:h-[100px] transition-all duration-1000 cursor-pointer fill-lime-300 hover:fill-lime-600">
+                    <use xlink:href="#phone"></use>
+                </svg>
+            </a>
+            <a href="message:+989876543210" class="z-40">
+                <svg
+                    class="w-20 h-20 hover:w-24 hover:h-24 transition-all duration-1000 cursor-pointer fill-amber-300 hover:fill-amber-600">
+                    <use xlink:href="#message"></use>
+                </svg>
+            </a>
+            <a href="https://t.me/sadranoras" torget="-Blank" class="z-40">
+                <svg
+                    class="w-20 h-20 hover:w-24 hover:h-24 transition-all duration-1000 cursor-pointer fill-cyan-300 hover:fill-cyan-700">
+                    <use xlink:href="#telegram"></use>
+                </svg>
+            </a>
+        </footer>
+    </div>
+</body>
+<style>
+</style>
+<script>
+    // const toggleButton = document.getElementById('toggle-dark');
+    // const main = document.querySelector('html');
+    // toggleButton.addEventListener('click', () => {
+    //     main.classList.toggle('dark');
+
+    // });
+    // const navbarbutton = document.getElementById('navbar');
+    // const navbar = document.getElementById('navbar')
+    // const navbarcontainer = document.getElementById('navbar-container')
+    // menubutton.addEventListener('click', () => {
+    //     navbar.classList.toggle('-ml-24')
+    //     menubutton.classList.toggle('opacity-0');
+    // });
+    // navbarcontainer.addEventListener('click', () => {
+    //     navbar.classList.toggle('-ml-24')
+    //     menubutton.classList.toggle('opacity-0')
+    // })
+    const toggleButton = document.getElementById('toggle-dark');
+    const main = document.querySelector('html');
+    toggleButton.addEventListener('click', () => {
+        main.classList.toggle('dark');
+    });
+    const toggleButton01 = document.getElementById('toggle-dark-01');
+    const main01 = document.querySelector('html');
+    toggleButton01.addEventListener('click', () => {
+        main01.classList.toggle('dark');
+    });
+    const menuButton = document.getElementById('menu-button');
+    const navbar = document.getElementById('navbar');
+    const navbarContainer = document.getElementById('navbar-container')
+    menuButton.addEventListener('click', () => {
+        navbar.classList.toggle('-ml-24');
+        menuButton.classList.toggle('opacity-0');
+    });
+    navbarContainer.addEventListener('click', () => {
+        navbar.classList.toggle('-ml-24');
+        menuButton.classList.toggle('opacity-0');
+    });
+    // let btn = document.getElementById("home-section")
+    // mode = true
+    // btn.onclick = function(){
+    //     document.body.style
+    //     if(mode){
+    //         document.body.style.background = "../assets/images/bg-light.png"
+    //         mode = false
+    //     }
+    //     else{
+    //         document.body.style.background = "../assets/images/bg-dark.png"
+    //         mode = true
+    //     }
+    // }
+</script>
+
+</html>
+<!--
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+</svg>
+
+-->

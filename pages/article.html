@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-light dark:bg-dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | articles</title>
+  <link rel="stylesheet" href="../css/app.css">
+  <link rel="shortcut icon" href="../assets/images/favicon1.jpeg" type="image/x-icon">
+</head>
+<style>
+  #menu-container {
+    z-index: 10;
+  }
+
+  #menu-button {
+    z-index: 10;
+  }
+</style>
+
+<body>
+  <!-- sprite  -->
+  <svg class="hidden">
+    <defs>
+      <symbol id="add" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+        <path d="M460-460H240v-40h220v-220h40v220h220v40H500v220h-40v-220Z" />
+      </symbol>
+      <symbol id="home" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+        <path
+          d="M240-200h147.69v-235.38h184.62V-200H720v-360L480-741.54 240-560v360Zm-40 40v-420l280-211.54L760-580v420H532.31v-235.38H427.69V-160H200Zm280-310.77Z" />
+      </symbol>
+      <symbol id="routine" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+        <path
+          d="M409.85-409.85q-38.16-38.15-68.5-81.61-30.35-43.46-53.12-92.46-14.23 24-20.73 50.04Q261-507.85 261-480q0 91.34 63.83 155.17Q388.66-261 480-261q27.08 0 53.88-7 26.81-7 50.04-20.23-49-22.77-92.46-53.12-43.46-30.34-81.61-68.5Zm28.53-27.53q47.16 47.15 104.77 82.5 57.62 35.34 122.7 56.88-36.16 37.15-84.16 57.58Q533.69-220 481-220q-108.64 0-184.32-75.68Q221-371.36 221-480q0-52.69 20.42-100.69 20.43-48 57.58-84.16 21.54 65.08 56.88 122.7 35.35 57.61 82.5 104.77Zm283.08 56.61q-10.09-2.74-19.93-6.02-9.84-3.29-19.61-6.67 8.77-20.31 13.43-42.27 4.65-21.96 4.65-43.99 0-91.42-64.43-155.85Q571.14-700 479.72-700q-22.03 0-43.99 4.27t-42.27 13.04q-3.38-9.77-6.24-18.94-2.85-9.18-5.45-18.83Q405-730.23 430-735.12q25-4.88 51-4.88 108.64 0 184.32 75.68Q741-588.64 741-480q0 26-4.88 51-4.89 25-14.66 48.23ZM460-829.23v-95.39h40v95.39h-40Zm0 793.85v-95.39h40v95.39h-40Zm281.46-677.54-28.54-28.54L778.69-807l28.54 28.31-65.77 65.77ZM181.31-153l-28.54-28.31 65.77-65.77 28.54 28.54L181.31-153Zm647.92-307v-40h95.39v40h-95.39Zm-793.85 0v-40h95.39v40H35.38Zm743.31 307.23-65.77-65.77 28.54-28.54L807-181.31l-28.31 28.54ZM218.54-712.92 153-778.69l28.31-28.54 65.77 65.77-28.54 28.54Zm191.31 303.07Z" />
+      </symbol>
+    </defs>
+  </svg>
+  <!-- menu  -->
+  <div>
+    <!-- menu Icon  -->
+    <div id="menu-button"
+      class="h-20 w-20 bg-slate-300 rounded-full absolute top-5 left-5 cursor-pointer flex items-center justify-center">
+      <svg id="menu-icon" class="h-15 w-15 fill-slate-700 z-10 transition-all duration-700">
+        <use xlink:href="#add"></use>
+      </svg>
+    </div>
+    <!-- menu container  -->
+    <div id="menu-container"
+      class="w-20 scale-y-0 bg-slate-300 absolute top-[120px] left-5 rounded-full transition-all duration-300">
+      <a href="../index.html">
+        <svg class="w-full h-15 fill-slate-500/30 hover:fill-slate-500 z-10 transition-all duration-300 cursor-pointer">
+          <use xlink:href="#home"></use>
+        </svg>
+      </a>
+      <svg id="toggle-dark"
+        class="w-full h-15 fill-slate-500/30 dark:fill-orange-500/50 transition-all duration-300 hover:fill-gray-900 dark:hover:fill-orange-500 z-10 cursor-pointer">
+        <use xlink:href="#routine"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="min-h-screen grid grid-rows-4 grid-cols-4 p-10 gap-10">
+    <div
+      class="rounded-3xl bg-gradient-to-br from-green-200 to-green-600 w-full h-full hover:animate-pulse cursor-pointer transition-all duration-0">
+    </div>
+    <div
+      class="rounded-3xl bg-gradient-to-br from-cyan-300 to-cyan-600 w-full h-full hover:animate-pulse cursor-pointer">
+    </div>
+    <div
+      class="rounded-3xl bg-gradient-to-br from-purple-300 to-purple-600 w-full h-full hover:animate-pulse cursor-pointer">
+    </div>
+    <div
+      class="rounded-3xl bg-gradient-to-br from-orange-200 to-orange-600 w-full h-full hover:animate-pulse cursor-pointer">
+    </div>
+    <div
+      class="rounded-3xl bg-gradient-to-br from-indigo-300 to-indigo-600 w-full h-full hover:animate-pulse cursor-pointer">
+    </div>
+    <div id="p1-h1"
+      class="col-span-2 row-span-2 rounded-3xl bg-gradient-to-br from-fuchsia-300 to-fuchsia-800 flex items-center justify-center animate-pulse relative w-full h-fule cursor-pointer">
+      <h1 id="h1-01" class="font-GilroySemiBold text-8xl text-center w-full hover:animate-ping">Coming Soon...</h1>
+      <a id="my-a" class="absolute -bottom-[25px] bg-white text-stone-700 py-3 px-5 rounded-full" href="./read more.html">
+        <p id="my-p" class="bg-white text-stone-700 hover:animate-bounce">Read More...</p>
+      </a>
+    </div>
+    <div
+      class="rounded-3xl bg-gradient-to-br from-lime-200 to-lime-600 w-full h-full hover:animate-pulse cursor-pointer">
+    </div>
+    <div
+      class="rounded-3xl bg-gradient-to-br from-teal-300 to-teal-600 w-full h-full hover:animate-pulse cursor-pointer">
+    </div>
+    <div
+      class="rounded-3xl bg-gradient-to-br from-yellow-300 to-yellow-600 w-full h-full hover:animate-pulse cursor-pointer">
+    </div>
+    <div class="rounded-3xl bg-gradient-to-br from-sky-300 to-sky-600 w-full h-full hover:animate-pulse cursor-pointer">
+    </div>
+    <div class="rounded-3xl bg-gradient-to-br from-red-300 to-red-600 w-full h-full hover:animate-pulse cursor-pointer">
+    </div>
+    <div
+      class="rounded-3xl bg-gradient-to-br from-blue-300 to-blue-600 w-full h-full hover:animate-pulse cursor-pointer">
+    </div>
+    <div
+      class="rounded-3xl bg-gradient-to-br from-rose-300 to-rose-600 w-full h-full hover:animate-pulse cursor-pointer">
+    </div>
+  </div>
+</body>
+<script>
+  const toggleButton = document.getElementById('toggle-dark');
+  const main = document.querySelector('html');
+  toggleButton.addEventListener('click', () => {
+    main.classList.toggle('dark');
+  });
+  const menuButton = document.getElementById('menu-button');
+  const menuIcon = document.getElementById('menu-icon');
+  const menuContainer = document.getElementById('menu-container')
+  menuButton.addEventListener('click', () => {
+    menuIcon.classList.toggle('rotate-[270deg]');
+    menuContainer.classList.toggle('scale-y-0')
+  });
+  menuContainer.addEventListener('click', () => {
+    menuIcon.classList.toggle('rotate-[270deg]');
+    menuContainer.classList.toggle('scale-y-0');
+  })
+</script>
+
+</html>

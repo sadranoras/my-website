@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    @font-face {
+        font-family: "Gilroy Light";
+        src: url("../assets/fonts/Gilroy-Light.otf");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Gilroy";
+        src: url("../assets/fonts/Gilroy-Regular.otf");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Gilroy SemiBold";
+        src: url("../assets/fonts/Gilroy-SemiBold.otf");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Gilroy Bold";
+        src: url("../assets/fonts/Gilroy-Bold.otf");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Gilroy ExtraBold";
+        src: url("../assets/fonts/Gilroy-ExtraBold.otf");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Gilroy Black";
+        src: url("../assets/fonts/Gilroy-Black.otf");
+        font-display: swap;
+    }
+    * {
+        color: #e2e8f0;
+    }
+    html {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .bg-light {
+        background-image: url("../assets/images/bg-light.png");
+    }
+    .bg-dark {
+        background-image: url("../assets/images/bg-dark.png");
+    }
+    .bg-light-fixed {
+        background-image: url("../assets/images/bg-light-fixed.png");
+    }
+    .bg-dark-fixed {
+        background-image: url("../assets/images/bg-dark-fixed.png");
+    }
+    .bg-light-fixed-01 {
+        background-image: url("../assets/images/bg-light-fixed-01.png");
+    }
+    .bg-dark-fixed-01 {
+        background-image: url("../assets/images/bg-dark-fixed-01.png");
+    }
+    .bg-dark-div {
+        clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+        background-image: linear-gradient(#fbfafc00, #f8fafc23);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .bg-light-div {
+        clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+        background-image: linear-gradient(hsla(267, 16%, 11%, 0), hsla(211, 59%, 8%, 0.137));
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+@media (min-width: 770px) {
+    #header {
+        display: none;
+    }
+}
+@media (min-width: 770px) {
+    #navbar-2 {
+        display: none;
+    }
+}
+@media (max-width: 770px) {
+    #navbar {
+        display: none;
+    }
+}
+@media (max-width: 770px) {
+    #contect-section {
+        gap: 40px;
+    }
+}
+@media (max-width: 770px) {
+    #navbar-1 {
+        display: none;
+    }
+}
+@media (max-width: 645px) {
+    #navbar-1 {
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    #h1-01 {
+        font-size: 56px;
+        line-height: 1;
+    }
+}
+@media (max-width: 800px) {
+    #h1-01 {
+        font-size: 36px;
+        line-height: 1;
+    }
+}
+@media (max-width: 403px) {
+    #h1-01 {
+        font-size: 26px;
+        line-height: 1;
+    }
+}
+@media (max-width: 333px) {
+    #h1-01 {
+        font-size: 16px;
+        line-height: 1;
+    }
+}
+@media (max-width: 470px) {
+    #my-p {
+        font-size: 15px;
+        line-height: 1;
+    }
+}
+@media (max-width: 420px) {
+    #my-p {
+        font-size: 10px;
+        line-height: 1;
+    }
+}
+@media (max-width: 375px) {
+    #my-p {
+        font-size: 7px;
+        line-height: 1;
+    }
+}
+@media (max-width: 320px) {
+    #my-p {
+        font-size: 5px;
+        line-height: 1;
+    }
+}
+@media (max-width: 770px) {
+    #person-section {
+        padding-top: 98px;
+    }
+}
